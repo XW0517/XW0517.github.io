@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常州市中晔科技培训有限公司</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .card-shadow { box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05); }
+            .hover-lift { transition: transform .3s ease, box-shadow .3s ease; }
+            .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04); }
+
+            /* MOBILE ONLY：轮播横向滑动 */
+            .carousel-track {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;   /* iOS 弹性滚动 */
+            }
+            .carousel-slide {
+                flex: 0 0 85%;                     /* 手机一屏 1 张 */
+                scroll-snap-align: start;
+            }
+            @media (min-width: 769px) {            /* 电脑端恢复 3 列 */
+                .carousel-slide { flex: 0 0 calc(100% / 3); }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+<!-- ================= 导航栏 ================= -->
+<header class="sticky top-0 bg-white shadow-md z-50 transition-all duration-300">
+    <!-- MOBILE ONLY：flex 布局让按钮在右侧 -->
+    <div class="container mx-auto flex justify-between items-center px-4 py-3">
+        <div class="flex items-center space-x-2">
+            <img src="qizhishu.png" class="w-8 md:w-10">
+            <h2 class="text-sm font-bold text-primary text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-500 "
+                style="font-size:14px;">
+                常州市中晔科技培训有限公司
+            </h2>
+        </div>
+
+        <!-- 电脑端时间 / 手机端隐藏 -->
+        <div id="currentDateTime"
+             class=" md:block text-xs italic font-cursive bg-gray-100 px-1 py-1 rounded my-0 md:my-0">
+        </div>
+
+        <!-- 移动端菜单按钮 -->
+
+    </div>
+
+    <!-- 移动端下拉导航 -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg">
+        <nav class="flex flex-col space-y-3 px-4 py-3">
+            <a href="#home" class="hover:text-primary">首页</a>
+            <a href="#cpp-club" class="hover:text-primary">C++社团</a>
+            <a href="#drone-club" class="hover:text-primary">无人机社团</a>
+            <a href="#beidou-club" class="hover:text-primary">北斗科创社团</a>
+            <a href="#company" class="hover:text-primary">公司介绍</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= 英雄区域 ================= -->
+<section id="home"
+         class="bg-gradient-to-r from-blue-500 to-emerald-500 text-white py-16 px-4">
+    <h3 class="text-2xl md:text-4xl  text-center mb-6"
+        style="font-family:华文行楷;">
+        💥定格精彩瞬间！
+    </h3>
+
+    <!-- MOBILE ONLY：去掉固定 1500/1200 px，使用自适应容器 -->
+    <div class="max-w-7xl mx-auto">
+        <div class="carousel-track">
+            <div class="carousel-slide p-2">
+                <img src="无人机.jpg" alt="全国中小学无人机大赛团体冠军"
+                     class="w-full rounded-lg shadow-md">
+            </div>
+            <div class="carousel-slide p-2">
+                <img src="无人机1.jpg" alt="北斗科技创新大赛一等奖"
+                     class="w-full h-[76%] rounded-lg shadow-md">
+            </div>
+            <div class="carousel-slide p-2">
+                <img src="无人机2.jpg" alt="全国青少年科技创新大赛金奖"
+                     class="w-full rounded-lg shadow-md">
+            </div>
+            <div class="carousel-slide p-2">
+                <img src="无人机3.jpg" alt="全国青少年科技创新大赛金奖"
+                     class="w-full  h-[76%] rounded-lg shadow-md">
+            </div>
+
+            <!--            <div class="carousel-slide p-2">-->
+            <!--                <img src="北斗科创社团背景.jpg" alt="北斗科技创新大赛一等奖"-->
+            <!--                     class="w-full rounded-lg shadow-md">-->
+            <!--            </div>-->
+        </div>
+    </div>
+</section>
+
+<!-- ================= 课程介绍 ================= -->
+<section class="container mx-auto px-4 py-10">
+    <!--    课程介绍部分-->
+    <div class="container mx-auto px-4">
+        <div class="bg-white rounded-xl overflow-hidden card-shadow ">
+
+            <!-- C++社团（新增内容全部在这里） -->
+            <div id="cpp-club" class="bg-white rounded-xl overflow-hidden card-shadow ">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">无人机社团<span
+                            class="text-blue-700 text-lg font-bold"
+                            style="font-size:10px;">  面向3~5年级招生 </span></h3>
+                    <p class="text-gray-600 mb-4">
+                        ✈️ 以 “赛事备战” 为核心，通过场景化训练培养学生的无人机操控能力、空域规划思维与应急处置能力。</p>
+                    <p class="text-gray-600 mb-4">
+                        ️️✈️ 课程内容对标无人机赛事核心考点，注重实景化实战演练。助力学生在各无人机比赛中取得优异成绩。
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        ✈️ 为航空航天学习、无人机应用技术实践奠定基础，响应教育要求。</p>
+                    <p class="text-gray-600 mb-4">
+                        ✈️
+                        手：锻炼孩子们的动手能力，操作无人机飞行。眼：模拟训练及实际训练飞行，锻炼观察力。脑：通过动手能力及飞行来锻炼大脑的条件反射及判断力</p>
+                    <!-- 课程详情（默认隐藏） -->
+                    <div class="club-details  mt-4 pt-4 border-t border-gray-100">
+                        <!-- 1️⃣ 课程简介 -->
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-700 mb-2">👉课程简介：</h4>
+                            <p class="text-gray-800 text-sm leading-relaxed">
+                                1、无人机发展史。
+                            </p>
+                            <div class="my-3"></div>
+                            <p class="text-gray-800 text-sm leading-relaxed">
+                                2、无人机的基本组成（机架、电机、螺旋桨、电池等）及飞行原理（简单介绍升力产生）
+
+                            </p>
+                            <div class="my-3"></div>
+                            <p class="text-gray-800 text-sm leading-relaxed">
+                                3、安全操作规范（电池使用、飞行姿态等）
+                            </p>
+                            <div class="my-3"></div>
+                            <p class="text-gray-800 text-sm leading-relaxed">
+                                4、无人机操作入门（起飞与悬停、方向控制等）
+                            </p>
+
+                            <div class="my-3"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-700 mb-2 flex items-center">
+                                    <i class="fa fa-trophy text-primary mr-2"></i> 亮眼成绩
+                                </h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>💥在"2025年第九届全国青少年无人机大赛-模拟飞行赛"中，两名同学取得一等奖，十名同学取得二等奖。
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 3️⃣ 家长扫码报名 -->
+                            <div class="mb-6 " style="background-color: #f9f9f9; padding: 10px; border-radius: 10px;">
+                                <h4 class="font-semibold text-gray-700 mb-2">扫码报名</h4>
+                                <img src="qr-cpp.png" alt="C++社团报名二维码" class="w-32 h-32   border">
+                                <p class="text-sm text-gray-500">微信扫码 → 填写信息 → 等待老师联系</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= 原脚本保持不变 ================= -->
+<script>
+    /* 时间显示 */
+    function updateDateTime() {
+        document.getElementById('currentDateTime').textContent = new Date().toLocaleString();
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+
+    /* 移动端菜单 */
+    document.getElementById('menuBtn').addEventListener('click', () => {
+        document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    /* 导航滚动高亮（略） */
+</script>
+</body>
+</html>
