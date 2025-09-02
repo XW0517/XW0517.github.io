@@ -69,26 +69,31 @@
                 常州市中晔科技培训有限公司
             </h2>
             <h2 class="text-sm font-bold text-primary text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-500 sm:hidden">
-                中晔科技培训
+                常州市中晔科技培训有限公司
             </h2>
         </div>
 
         <!-- 时间显示：在手机上移至移动端菜单 -->
-        <div id="currentDateTime" class="hidden md:block text-xs italic font-cursive bg-gray-100 px-2 py-1 rounded my-2 md:my-0">
+        <div id="currentDateTime"
+             class=" md:block text-xs italic font-cursive bg-gray-100 px-1 py-1 rounded my-0 md:my-0"
+             style="font-size:1px;">
         </div>
 
         <!-- 桌面导航栏 -->
         <nav class="hidden md:flex flex-wrap items-center space-x-2 md:space-x-4 mt-2 md:mt-0">
             <a href="#company" class="nav-link font-medium hover:text-primary transition-colors px-2 py-1">关于我们</a>
-            <a href="#cpp-club" class="nav-link font-medium hover:text-primary transition-colors px-2 py-1">C++社团</a>
-            <a href="#drone-club" class="nav-link font-medium hover:text-primary transition-colors px-2 py-1">无人机社团</a>
-            <a href="#beidou-club" class="nav-link font-medium hover:text-primary transition-colors px-2 py-1">北斗科创社团</a>
-            <a href="#mobileMenu" class="nav-link font-medium hover:text-primary transition-colors px-2 py-1">👆回到顶部</a>
+            <!--            <a href="#cpp-club" class="nav-link font-medium hover:text-primary transition-colors px-2 py-1">C++社团</a>-->
+            <a href="#drone-club"
+               class="nav-link font-medium hover:text-primary transition-colors px-2 py-1">无人机社团</a>
+            <!--                        <a href="#beidou-club"-->
+            <!--                           class="nav-link font-medium hover:text-primary transition-colors px-2 py-1">北斗科创社团</a>-->
+            <a href="#mobileMenu"
+               class="nav-link font-medium hover:text-primary transition-colors px-2 py-1">👆回到顶部</a>
         </nav>
 
         <!-- 移动端菜单按钮：增大点击区域 -->
         <button id="menuBtn" class="md:hidden text-gray-600 focus:outline-none touch-friendly p-2 ml-auto">
-            <i class="fa fa-bars text-xl"></i>
+            <i>👆 </i>
         </button>
     </div>
 
@@ -96,13 +101,18 @@
     <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg absolute w-full">
         <div class="container mx-auto px-4 py-3 flex flex-col space-y-2">
             <!-- 移动端显示时间 -->
-            <div id="mobileDateTime" class="text-xs italic font-cursive bg-gray-100 px-2 py-1 rounded mb-1">
+            <div id="mobileDateTime" class="hidden text-xs italic font-cursive bg-gray-100 px-2 py-1 rounded mb-1">
             </div>
-            <a href="#home" class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">首页</a>
-            <a href="#cpp-club" class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">C++社团</a>
-            <a href="#drone-club" class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">无人机社团</a>
-            <a href="#beidou-club" class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">北斗科创社团</a>
-            <a href="#company" class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">公司介绍</a>
+            <a href="#home"
+               class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">首页</a>
+            <!--            <a href="#cpp-club"-->
+            <!--               class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">C++社团</a>-->
+            <a href="#drone-club"
+               class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">无人机社团</a>
+            <!--            <a href="#beidou-club"-->
+            <!--               class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">北斗科创社团</a>-->
+            <a href="#company"
+               class="py-2 px-3 hover:bg-gray-100 rounded hover:text-primary transition-colors touch-friendly">公司介绍</a>
         </div>
     </div>
 </header>
@@ -113,11 +123,13 @@
         <h2 class="text-2xl md:text-4xl font-bold mb-4 animate-fade-in-up font-fantasy">
             新学期·社团招募开始啦！
         </h2>
-        <p class="text-sm md:text-base max-w-md md:max-w-2xl mx-auto mb-6 opacity-90 italic" style="letter-spacing: 1px;">
+        <p class="text-sm md:text-base max-w-md md:max-w-2xl mx-auto mb-6 opacity-90 italic"
+           style="letter-spacing: 1px;">
             深耕科学教育，培育众多优秀学子斩获佳绩！期待您的加入！
         </p>
-        <a href="#cpp-club" class="inline-block bg-white text-primary font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-100 transition-colors shadow-lg touch-friendly">
-            了解社团详情 <i class="fa fa-arrow-right ml-1"></i>
+        <a href="#cpp-club"
+           class="inline-block bg-white text-primary font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-100 transition-colors shadow-lg touch-friendly">
+            了解社团详情 <i class="">👆 </i>
         </a>
     </div>
 </section>
@@ -129,35 +141,42 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-0 md:-mt-7">
             <!-- C++社团 -->
-            <div id="cpp-club" class="bg-white rounded-xl overflow-hidden card-shadow hover-lift">
-                <div class="h-56 md:h-70 bg-blue-100 flex items-center justify-center">
-                    <img src="C++上课背景.jpg" class="w-full h-full object-cover" alt="C++上课场景">
-                </div>
-                <div class="p-5 md:p-6">
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">C++编程社团</h3>
-                    <p class="text-gray-600 mb-4">通过编程学习，培养学生在数学、逻辑、运算法则等方面的计算思维，并使用这种新方式思考学习生活中的每一件事情。</p>
+            <!--            <div id="cpp-club" class="bg-white rounded-xl overflow-hidden card-shadow hover-lift">-->
+            <!--                <div class="h-56 md:h-70 bg-blue-100 flex items-center justify-center">-->
+            <!--                    <img src="C++上课背景.jpg" class="w-full h-full object-cover" alt="C++上课场景">-->
+            <!--                </div>-->
+            <!--                <div class="p-5 md:p-6">-->
+            <!--                    <h2 class="text-xl font-bold mb-3 text-gray-800">C++编程社团 </h2>-->
+            <!--                    <h3 class="text-xl font-bold mb-3 text-gray-800"><span-->
+            <!--                            class="text-blue-700 text-lg font-bold"-->
+            <!--                            style="font-size:10px;">面向4~6年级招生，980元/人/学期。(15次课) </span></h3>-->
+            <!--                    <h3 class="text-xl font-bold mb-3 text-gray-800 -mt-2"><span-->
+            <!--                            class="text-green-700 text-lg font-bold"-->
+            <!--                            style="font-size:10px;">上课时间：周一：六年级。周二：五年级。周三：四年级。 </span></h3>-->
+            <!--                    <p class="text-gray-600 mb-4">欢迎 热爱编程、数学与科技的你，共赴科技逐梦之旅，解锁编程新可能！</p>-->
 
-                    <!-- 课程详情（默认隐藏） -->
-                    <div class="club-details hidden mt-4 pt-4 border-t border-gray-100">
-                        <h4 class="font-semibold text-gray-700 mb-2">课程介绍：</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
-                            <li>GESP1-GESP4 级核心知识点</li>
-                            <li>C++基础语法与程序设计</li>
-                            <li>基础算法（穷举法、冒泡排序、线性查找等）</li>
-                            <li>竞赛真题解析(备GESP及江苏省信息未来夏令营。)</li>
-                        </ul>
-                        <!-- 报名文件下载 -->
-                        <a href="C++课程详情页.html" target="_blank" class="inline-flex items-center text-white bg-primary px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors touch-friendly">
-                            <i class="fa fa-download mr-2"></i> 点我查看课程详情页
-                        </a>
-                    </div>
+            <!--                    &lt;!&ndash; 课程详情（默认隐藏） &ndash;&gt;-->
+            <!--                    <div class="club-details hidden mt-4 pt-4 border-t border-gray-100">-->
+            <!--                        <h4 class="font-semibold text-gray-700 mb-2">课程介绍：</h4>-->
+            <!--                        <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">-->
+            <!--                            <li>课程围绕小学生熟知的场景展开，通过问题引导学生思考，并通过编程解决。</li>-->
+            <!--                            <li>-->
+            <!--                                旨在培养学生在数学、逻辑、运算法则等方面的计算思维，并使用这种新方式思考学习生活中的每一件事情。-->
+            <!--                            </li>-->
+            <!--                        </ul>-->
+            <!--                        &lt;!&ndash; 报名文件下载 &ndash;&gt;-->
+            <!--                        <a href="C++课程详情页.html" target="_blank"-->
+            <!--                           class="inline-flex items-center text-white bg-primary px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors touch-friendly">-->
+            <!--                            <i class="">👆 </i> 点我查看课程详情页-->
+            <!--                        </a>-->
+            <!--                    </div>-->
 
-                    <!-- 查看详情按钮 -->
-                    <button class="view-details mt-4 text-primary font-medium hover:text-blue-700 transition-colors touch-friendly">
-                        查看课程简介 <i class="fa fa-chevron-down ml-1"></i>
-                    </button>
-                </div>
-            </div>
+            <!--                    &lt;!&ndash; 查看详情按钮 &ndash;&gt;-->
+            <!--                    <button class="view-details mt-4 text-primary font-medium hover:text-blue-700 transition-colors touch-friendly">-->
+            <!--                        查看课程简介 <i class="">👆 </i>-->
+            <!--                    </button>-->
+            <!--                </div>-->
+            <!--            </div>-->
 
             <!-- 无人机社团 -->
             <div id="drone-club" class="bg-white rounded-xl overflow-hidden card-shadow hover-lift">
@@ -165,8 +184,17 @@
                     <img src="无人机.jpg" class="w-full h-full object-cover" alt="无人机社团">
                 </div>
                 <div class="p-5 md:p-6">
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">无人机社团</h3>
-                    <p class="text-gray-600 mb-4">课程以校队组建和赛事备战为核心，涵盖航天知识、飞行实操和竞赛模拟。通过场景化训练，培养学生操控、规划和应急能力。</p>
+                    <h2 class="text-xl font-bold mb-3 text-gray-800">无人机社团 </h2>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800"><span
+                            class="text-blue-700 text-lg font-bold"
+                            style="font-size:10px;">面向3~5年级招生，980元/人/学期(含无人机)。(15次课) </span></h3>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 -mt-2"><span
+                            class="text-green-700 text-lg font-bold"
+                            style="font-size:10px;">上课时间：周二：五年级。周三：三年级、四年级。 </span></h3>
+
+
+                    <p class="text-gray-600 mb-4">
+                        课程以校队组建和赛事备战为核心，涵盖航天知识、飞行实操和竞赛模拟。通过场景化训练，培养学生操控、规划和应急能力。</p>
 
                     <!-- 课程详情（默认隐藏） -->
                     <div class="club-details hidden mt-4 pt-4 border-t border-gray-100">
@@ -177,47 +205,52 @@
                             <li>无人机实操</li>
                             <li>无人机竞赛与赛事指导</li>
                         </ul>
-                        <a href=" " target="_blank" class="inline-flex items-center text-white bg-primary px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors touch-friendly">
-                            <i class="fa fa-download mr-2"></i> 点我查看课程详情页
+                        <a href="无人机课程详情页.html" target="_blank"
+                           class="inline-flex items-center text-white bg-primary px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors touch-friendly">
+                            <i class="">👆 </i> 点我查看课程详情页
                         </a>
                     </div>
 
                     <!-- 查看详情按钮 -->
                     <button class="view-details mt-4 text-secondary font-medium hover:text-green-700 transition-colors touch-friendly">
-                        查看课程简介 <i class="fa fa-chevron-down ml-1"></i>
+                        查看课程简介 <i class="">👆 </i>
                     </button>
                 </div>
             </div>
 
-            <!-- 北斗科创社团 -->
-            <div id="beidou-club" class="bg-white rounded-xl overflow-hidden card-shadow hover-lift">
-                <div class="h-56 md:h-70 bg-yellow-100 flex items-center justify-center">
-                    <img src="北斗科创背景.jpg" class="w-full h-full object-cover" alt="北斗科创社团">
-                </div>
-                <div class="p-5 md:p-6">
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">北斗科创社团</h3>
-                    <p class="text-gray-600 mb-4">课程由多方专家打造，以"科创+实践"为核心。涵盖寻找类地星球、了解北斗导航、运载火箭等知识，感受科学就在身边。通过操作激发兴趣与能力，为航天学习奠定基础。</p>
-                    <!-- 课程详情（默认隐藏） -->
-                    <div class="club-details hidden mt-4 pt-4 border-t border-gray-100">
-                        <h4 class="font-semibold text-gray-700 mb-2">课程介绍：</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-1">
-                            <li>通过视听、赏阅、实践，帮学生了解北斗导航</li>
-                            <li>运载火箭、科学家精神等</li>
-                            <li>全国青少年北斗杯大赛</li>
-                            <li>全国青少年航天创新大赛</li>
-                        </ul>
-                        <a href=" " target="_blank" class="inline-flex items-center text-white bg-primary px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors touch-friendly">
-                            <i class="fa fa-download mr-2"></i> 点我查看课程详情页
-                        </a>
-                    </div>
+            <!--            &lt;!&ndash; 北斗科创社团 &ndash;&gt;-->
+            <!--            <div id="beidou-club" class="bg-white rounded-xl overflow-hidden card-shadow hover-lift">-->
+            <!--                <div class="h-56 md:h-70 bg-yellow-100 flex items-center justify-center">-->
+            <!--                    <img src="北斗科创背景.jpg" class="w-full h-full object-cover" alt="北斗科创社团">-->
+            <!--                </div>-->
+            <!--                <div class="p-5 md:p-6">-->
+            <!--                    <h3 class="text-xl font-bold mb-3 text-gray-800">北斗科创社团 <span-->
+            <!--                            class="text-yellow-700 text-lg font-bold" style="font-size:10px;">面向2~3年级招生 </span>-->
+            <!--                    </h3>-->
+            <!--                    <p class="text-gray-600 mb-4">-->
+            <!--                        课程由多方专家打造，以"科创+实践"为核心。涵盖寻找类地星球、了解北斗导航、运载火箭等知识，感受科学就在身边。通过操作激发兴趣与能力，为航天学习奠定基础。</p>-->
+            <!--                    &lt;!&ndash; 课程详情（默认隐藏） &ndash;&gt;-->
+            <!--                    <div class="club-details hidden mt-4 pt-4 border-t border-gray-100">-->
+            <!--                        <h4 class="font-semibold text-gray-700 mb-2">课程介绍：</h4>-->
+            <!--                        <ul class="list-disc list-inside text-gray-600 space-y-1">-->
+            <!--                            <li>通过视听、赏阅、实践，帮学生了解北斗导航</li>-->
+            <!--                            <li>运载火箭、科学家精神等</li>-->
+            <!--                            <li>全国青少年北斗杯大赛</li>-->
+            <!--                            <li>全国青少年航天创新大赛</li>-->
+            <!--                        </ul>-->
+            <!--                        <a href="北斗科创课程详情页.html" target="_blank"-->
+            <!--                           class="inline-flex items-center text-white bg-primary px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors touch-friendly">-->
+            <!--                            <i class="">👆 </i> 点我查看课程详情页-->
+            <!--                        </a>-->
+            <!--                    </div>-->
 
-                    <!-- 查看详情按钮 -->
-                    <button class="view-details mt-4 text-accent font-medium hover:text-yellow-700 transition-colors touch-friendly">
-                        查看课程简介 <i class="fa fa-chevron-down ml-1"></i>
-                    </button>
-                </div>
-            </div>
+            <!--                    &lt;!&ndash; 查看详情按钮 &ndash;&gt;-->
+            <!--                    <button class="view-details mt-4 text-accent font-medium hover:text-yellow-700 transition-colors touch-friendly">-->
+            <!--                        查看课程简介 <i class="">👆 </i>-->
+            <!--                    </button>-->
         </div>
+    </div>
+    </div>
     </div>
 </section>
 
@@ -229,8 +262,8 @@
         <div class="bg-white rounded-xl shadow-lg p-5 md:p-8 max-w-4xl mx-auto -mt-5">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-6 md:mb-0 md:pl-0 flex justify-center">
-                    <div class="w-28 h-28 md:w-32 md:h-32 bg-primary/10 rounded-full flex items-center justify-center">
-                        <img src="qizhishu.png" class="w-16 h-10 md:w-20 md:h-12 object-contain" alt="公司LOGO">
+                    <div class="w-28 h-28 md:w-32 md:h-32  rounded-full flex items-center justify-center">
+                        <img src="qizhishu.png" class="w-full h-full md:w-20 md:h-12 object-contain" alt="公司LOGO">
                     </div>
                 </div>
 
@@ -241,30 +274,40 @@
                     <div class="space-y-4 text-gray-600">
                         <div>
                             <h4 class="font-semibold text-gray-700 mb-1 flex items-center">
-                                <i class="fa fa-map-marker text-primary mr-2"></i> 公司地址
+                                <i class=""> 🏘️ </i> 公司地址
                             </h4>
                             <p>常州市钟楼区健身路16号</p>
                         </div>
 
                         <div>
                             <h4 class="font-semibold text-gray-700 mb-1 flex items-center">
-                                <i class="fa fa-trophy text-primary mr-2"></i> 亮眼成绩
+                                <i class="">💯 </i> 亮眼成绩
                             </h4>
                             <ul class="list-disc list-inside space-y-1">
-                                <li>"信息与未来"省赛中，学员表现突出，105人获奖，获奖率高达88.3%</li>
-                                <li>省常中"2+4"强基计划中，超50%录取学生有C++学习背景。</li>
-                                <li>姜祉旭、韩少峰等学员，凭借优异的编程成绩考入省常中"0+6"班。</li>
-                                <li>众多学员凭编程优势被知名初中录取，编程一直是常州升学"加分项"！</li>
+                                <li>在"2025年信息与未来"省赛中，启智树学员表现突出，105 人成功获奖，获奖率高达 88.3%。</li>
+                                <li>博小的姜同学、韩同学、葛同学等十五位同学斩获荣誉，成为科技小先锋。</li>
                             </ul>
                         </div>
 
                         <div>
                             <h4 class="font-semibold text-gray-700 mb-1 flex items-center">
-                                <i class="fa fa-info-circle text-primary mr-2"></i> 课程核心优势
+                                <i class="">✍️ </i> 培养目标
                             </h4>
-                            <p>
-                                从小学搭建"强基-竞赛-升学"全路径培养体系：对接国家强基人才选拔计划，低年级先帮孩子建立计算思维，初中无缝衔接CSP-J/S认证，高中冲刺信息学奥赛（NOI），让学习目标清晰不盲目。
+                            <p class="text-gray-800 text-sm leading-relaxed">
+                                <span class="text-blue-700 text-lg font-bold">知识 -</span>
+                                多方位科普及提升信息学 C++ 理论知识
                             </p>
+                            <div class="my-3"></div>
+                            <p class="text-gray-800 text-sm leading-relaxed">
+                                <span class="text-blue-700 text-lg font-bold">思维 -</span>
+                                情景化、任务式教学，全面提升逻辑思维。
+                            </p>
+                            <div class="my-3"></div>
+                            <p class="text-gray-800 text-sm leading-relaxed">
+                                <span class="text-blue-700 text-lg font-bold">能力 -</span>
+                                培养良好的科学素养，团队协作、创新思维等综合素养。
+                            </p>
+                            <div class="my-3"></div>
                         </div>
                     </div>
                 </div>
@@ -279,7 +322,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div>
                 <h3 class="text-lg font-bold mb-4 flex items-center">
-                    <i class="fa fa-graduation-cap mr-2"></i> 科创教育
+                    <i class="2">🔬 </i> 科创教育
                 </h3>
                 <p class="text-gray-400">
                     让每个孩子都能接触前沿科技，培养创新思维与实践能力。
@@ -291,24 +334,23 @@
                 <ul class="space-y-2 text-gray-400">
                     <li><a href="#mobileMenu" class="hover:text-white transition-colors">👆回到顶部</a></li>
                     <li><a href="#cpp-club" class="hover:text-white transition-colors">C++社团</a></li>
-                    <li><a href="#drone-club" class="hover:text-white transition-colors">无人机社团</a></li>
-                    <li><a href="#beidou-club" class="hover:text-white transition-colors">北斗科创社团</a></li>
+                    <!--                    <li><a href="#drone-club" class="hover:text-white transition-colors">无人机社团</a></li>-->
+                    <!--                    <li><a href="#beidou-club" class="hover:text-white transition-colors">北斗科创社团</a></li>-->
                     <li><a href="#company" class="hover:text-white transition-colors">公司介绍</a></li>
                 </ul>
             </div>
+
 
             <div>
                 <h3 class="text-lg font-bold mb-4">联系我们</h3>
                 <ul class="space-y-2 text-gray-400">
                     <li class="flex items-center">
-                        <i class="fa fa-phone mr-2"></i>18114318533
+                        <i class="">☎️ ： </i>18114318533
                     </li>
                     <li class="flex items-center">
-                        <i class="fa fa-envelope mr-2"></i> contact@kecheng.com
+                        <i class="">📮 ： </i> 1037555635@qq.com
                     </li>
-                    <li class="flex items-center">
-                        <i class="fa fa-clock-o mr-2"></i> 周一至周五 9:00-18:00
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -342,13 +384,13 @@
     document.querySelectorAll('.view-details').forEach(button => {
         button.addEventListener('click', function() {
             const details = this.parentElement.querySelector('.club-details');
-            
+
             details.classList.toggle('hidden');
 
             if (details.classList.contains('hidden')) {
                 this.innerHTML = '查看课程简介 <i class="fa fa-chevron-down ml-1"></i>';
             } else {
-                this.innerHTML = '收起课程简介 <i class="fa fa-chevron-up ml-1"></i>';
+                this.innerHTML = '收起课程简介 <i class="1"> ↑ </i>';
             }
         });
     });
@@ -379,11 +421,11 @@
         const dateTimeString = now.toLocaleString();
         const desktopTime = document.getElementById('currentDateTime');
         const mobileTime = document.getElementById('mobileDateTime');
-        
+
         if (desktopTime) desktopTime.textContent = dateTimeString;
         if (mobileTime) mobileTime.textContent = dateTimeString;
     }
-    
+
     // 初始加载时显示时间
     updateDateTime();
     // 每秒更新一次
@@ -391,3 +433,4 @@
 </script>
 </body>
 </html>
+
